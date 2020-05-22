@@ -44,7 +44,7 @@ public class RegisterServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
+		HttpSession session = null;
 		try {
 
 			String name = request.getParameter("user_name");
@@ -64,13 +64,15 @@ public class RegisterServlet extends HttpServlet {
 
 			tx.commit();
 			fa.close();
-			HttpSession session = request.getSession();
-			session.setAttribute("message", userInfo.toString());
+			 session = request.getSession();
+			session.setAttribute("message", "success");
 			System.out.println("User created successfully ");
 			System.out.println("Id" + id);
 			
 			response.sendRedirect("register.jsp");
 		} catch (Exception e) {
+//			session = request.getSession();
+//			session.setAttribute("message", "e");
 			e.printStackTrace();
 		}
 	}
