@@ -1,0 +1,6 @@
+com\tod\entities\Product.class
+com\tod\helper\FactoryProvider.class
+com\tod\entities\Category.class
+com\tod\entities\UserInfo.class
+firstProject\FirstServlet.class
+com\tod\entities\Address.class

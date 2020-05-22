@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register User</title>
+<%@include file='common_css_js.jsp'%>
+</head>
+<body  style="background-color:yellow">
+<div class="container-fluid">
+
+	<div class="row mt-5" >
+
+		<div class="col-md-4 offset-md-4">
+		<%@include file="message.jsp" %>
+		
+			<div class="card">
+				<div class="card-body">
+
+					<h3 class="text-center my-2">Sign Up here</h3>
+
+
+					<form action="RegisterServlet" method="post">
+						<div class="form-group">
+							<label for="name">Name</label> <input type="text" name ="user_name"
+								class="form-control" id="name" placeholder="Enter Name">
+						</div>
+
+						<div class="form-group">
+							<label for="mobile">Mobile</label> <input type="number" name ="user_mobile"
+								class="form-control" id="mobile" placeholder="Enter Mobile">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email address</label> <input type="email" name ="user_email"
+								class="form-control" id="email" aria-describedby="emailHelp"
+								placeholder="Enter email">
+						</div>
+
+						<div class="form-group">
+							<label for="password">Password</label> <input type="password" name ="user_password"
+								class="form-control" id="password" placeholder="Password">
+						</div>
+
+
+						<div class="form-group">
+							<label for="address">Address</label>
+							<textarea style="height: 150px" class="form-control" id="address" name ="user_address"
+								placeholder="Address"></textarea>
+						</div>
+
+						<div class="container" align="center">
+							<button class="btn btn-outline-primary">Register</button>
+							<button class="btn btn-outline-warning">Reset</button>
+						</div>
+
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
