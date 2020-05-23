@@ -7,18 +7,21 @@
 <title>Register User</title>
 <%@include file='common_css_js.jsp'%>
 </head>
-<body  style="background-color:yellow">
+<body  >
 <div class="container-fluid">
 
 	<div class="row mt-5" >
 
-		<div class="col-md-4 offset-md-4">
+		<div class="col-md-6 offset-md-3">
 		<%@include file="message.jsp" %>
 		
 			<div class="card">
+			
+			<div class="card-header text-center">
+				<h3>Register here</h3>
+			</div>
+			
 				<div class="card-body">
-
-					<h3 class="text-center my-2">Sign Up here</h3>
 
 
 					<form action="RegisterServlet" method="post">
@@ -52,7 +55,8 @@
 
 						<div class="container" align="center">
 							<button class="btn btn-outline-primary">Register</button>
-							<button class="btn btn-outline-warning">Reset</button>
+							<input type="reset" class="btn btn-outline-warning"
+									value="Reset">
 						</div>
 
 
