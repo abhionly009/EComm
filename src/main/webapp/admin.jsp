@@ -71,7 +71,7 @@
 
 			<div class="col md-6">
 
-				<div class="card">
+				<div class="card" data-toggle="modal" data-target="#add-category">
 
 					<div class="card-body" align="center">
 						<div class="container" align="center">
@@ -132,9 +132,8 @@
 					</div>
 
 					<div class="card-body" align="center">
-						<a href="#"><span>Products</span> </a><br> <a href="#">
-							<span>Categories</span>
-							<br><br>
+						<a href="#"><span>Products</span> </a><br> <a href="#"> <span>Categories</span>
+							<br> <br>
 						</a><a href="#"><span></span></a>
 
 					</div>
@@ -145,6 +144,47 @@
 
 
 
+	</div>
+
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="add-category" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="name">Category</label> <input type="text" name="name"
+							id="name" class="form-control" placeholder="Enter your category">
+					</div>
+
+
+					<div class="form-group">
+						<label for="description">Description</label>
+						<textarea name="description" id="description" class="form-control"
+							placeholder="Enter your description"></textarea>
+					</div>
+
+					<div class="container">
+
+						<button type="button" class="btn btn-primary">Add
+							category</button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 	</div>
 </body>
 </html>
